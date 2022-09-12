@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
+ * Description: using main function
+ * this program prints numbers
+ * Return: 0
  */
-
 int main(void)
-	{
-	int a;
+{
+	int c;
 
-	for (a = 0; a < 10; a++)
+	for (c = 48; c <= 57; c++)
 	{
-		putchar(a + '0');
-		if (a < 9)
+		putchar(c);
+		if (c != 57)
 		{
 			putchar(',');
 			putchar(' ');
@@ -20,4 +20,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-	}
+}
