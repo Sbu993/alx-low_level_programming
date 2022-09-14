@@ -4,7 +4,6 @@
  * and resets mins
  * Return: 0
  */
-
 void jack_bauer(void)
 {
 	int hours = 0;
