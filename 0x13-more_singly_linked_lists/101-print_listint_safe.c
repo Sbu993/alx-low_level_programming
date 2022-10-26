@@ -5,6 +5,7 @@
  * @head: pointer to head pointer of linked list
  * Return: number of unique nodes in list before a loop
  */
+
 int count_nodes_till_loop(const listint_t *head)
 {
 	int count = 0;
@@ -30,6 +31,7 @@ int count_nodes_till_loop(const listint_t *head)
 			return (count);
 		}
 	}
+
 	return (0);
 }
 
@@ -38,6 +40,7 @@ int count_nodes_till_loop(const listint_t *head)
  * @head: pointer to head pointer of linked list
  * Return: 0 if no loop, 1 if loop
  */
+
 int loop(const listint_t *head)
 {
 	const listint_t *turtle, *hare;
@@ -52,6 +55,7 @@ int loop(const listint_t *head)
 		if (turtle == hare)
 			return (1);
 	}
+
 	return (0);
 }
 
@@ -60,6 +64,7 @@ int loop(const listint_t *head)
  * @head: pointer to head pointer of linked list
  * Return: number of nodes in list, exit(98) if failed
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	int count = 0;
@@ -93,6 +98,7 @@ size_t print_listint_safe(const listint_t *head)
 		}
 	}
 
+	
 	return (num_nodes);
 }
 
